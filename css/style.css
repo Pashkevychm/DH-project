@@ -1,0 +1,16 @@
+#about{
+    text-align: center;
+}
+
+.btn-group{
+    text-align: center;
+}
+
+.product{
+    display: flex;
+    width: 100px;
+    height: 250px;
+
+    
+     
+}

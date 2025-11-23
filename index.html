@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Market</title>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/css/bootstrap.min.css">
+    <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+<header>
+    <nav class="navbar navbar-expand-lg bg-body-tertiary">
+    <div class="container-fluid">
+        <a class="navbar-brand" href="#">Market</a>
+        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNavAltMarkup" aria-controls="navbarNavAltMarkup" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarNavAltMarkup">
+        <div class="navbar-nav">
+            <a class="nav-link active" aria-current="page" href="#">Про нас</a>
+            <a class="nav-link" href="cart.html">Товари</a>
+            <a class="nav-link" href="#">Кошик</a>
+        </div>
+        </div>
+    </div>
+    </nav>
+</header>
+
+<main>
+    <section id="about">
+        <h2>Про нас</h2>
+        <p>Опис сайту</p>
+        <img src="img/gd.jpg" alt="Тут має бути картинка...">
+    </section>
+
+    <section id="products">
+        <h2 >Наші товари</h2>
+        <div class="prd">
+            <div class="btn-group" role="group" aria-label="Basic example">
+                <button type="button" class="btn btn-primary">Телефони</button>
+                <button type="button" class="btn btn-primary">Комп'ютери</button>
+                <button type="button" class="btn btn-primary">Планшети</button>
+            </div>
+            <article class="product" data-category="phones">
+                <img src="" alt="Тут має бути картинка..." class="product-img">
+                <h3 class="product-title">Товар 1</h3>
+                <p class="product-description">Опис</p>
+                <button type="button" class="btn btn-primary">Додати до кошику</button>
+            </article>
+            <article class="product" data-category="laptop">
+                <img src="" alt="Тут має бути картинка..." class="product-img">
+                <h3 class="product-title">Товар 2</h3>
+                <p class="product-description">Опис</p>
+                <button type="button" class="btn btn-primary">Додати до кошику</button>
+            </article>
+        </div>
+    </section>
+</main>
+
+    <script scr="js/script.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/js/bootstrap.bundle.min.js"></script>
+</body>
+</html>

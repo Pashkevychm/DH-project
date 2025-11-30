@@ -9,24 +9,24 @@
 </head>
 <body>
 <header>
-    <nav class="navbar navbar-expand-lg bg-body-tertiary">
-    <div class="container-fluid">
-        <a class="navbar-brand" href="#">Market</a>
-        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNavAltMarkup" aria-controls="navbarNavAltMarkup" aria-expanded="false" aria-label="Toggle navigation">
-        <span class="navbar-toggler-icon"></span>
-        </button>
-        <div class="collapse navbar-collapse" id="navbarNavAltMarkup">
-        <div class="navbar-nav">
-            <a class="nav-link active" aria-current="page" href="#">Про нас</a>
-            <a class="nav-link" href="cart.html">Товари</a>
-            <a class="nav-link" href="#">Кошик</a>
+    <nav class="navbar navbar-expand-lg" data-bs-theme="dark">
+        <div class="container-fluid">
+            <a class="navbar-brand" href="#">Market</a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNavAltMarkup" aria-controls="navbarNavAltMarkup" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarNavAltMarkup">
+            <div class="navbar-nav">
+                <a class="nav-link active" aria-current="page" href="#">Про нас</a>
+                <a class="nav-link" href="#">Товари</a>
+                <a class="nav-link" href="cart.html ">Кошик</a>
+            </div>
+            </div>
         </div>
-        </div>
-    </div>
     </nav>
 </header>
 
-<main>
+<main class="container">
     <section id="about">
         <h2>Про нас</h2>
         <p>Опис сайту</p>
@@ -41,18 +41,21 @@
                 <button type="button" class="btn btn-primary">Комп'ютери</button>
                 <button type="button" class="btn btn-primary">Планшети</button>
             </div>
+            <div class="products-div">
             <article class="product" data-category="phones">
                 <img src="" alt="Тут має бути картинка..." class="product-img">
                 <h3 class="product-title">Товар 1</h3>
                 <p class="product-description">Опис</p>
-                <button type="button" class="btn btn-primary">Додати до кошику</button>
+                <button type="button" class="btn btn-primary">До кошику</button>
             </article>
             <article class="product" data-category="laptop">
                 <img src="" alt="Тут має бути картинка..." class="product-img">
                 <h3 class="product-title">Товар 2</h3>
                 <p class="product-description">Опис</p>
-                <button type="button" class="btn btn-primary">Додати до кошику</button>
+                <button type="button" class="btn btn-primary">До кошику</button>
             </article>
+            </div>
+
         </div>
     </section>
 </main>

@@ -5,7 +5,7 @@ let products = [
         image: "img",
         desription: "Опис",
         type: "phone",
-        price: x
+        price: 1000
     },
     {
         id: 2,
@@ -13,7 +13,7 @@ let products = [
         image: 'img',
         desription: 'Опис',
         type: 'laptop',
-        price: x
+        price: 150
     }
 ];
 
@@ -35,7 +35,7 @@ function renderProducts(items) {
         <h3 class="product-title">${item.name}</h3>
         <p class="product-description">${item.desription}</p>
         <p class="product-price"><strong>${item.price} грн</strong></p>
-        <button type="button" class="btn btn-primary">До кошику</button>
+        <button type="button" class="btn btn-primary add-to-cart-btn">До кошику</button>
     </article>
     `
     productsContainer.innerHTML += productHTML
@@ -53,7 +53,7 @@ function applyFilters(categoryType){
 }
 
 function addToCart(productId) {
-    let product = products.find(p => p.id == product.id);
+    let product = products.find(p => p.id == productId);
     if (product) {
         cart.push(product);
         alert("Товар додано" + product.name)
@@ -76,5 +76,12 @@ function setupFilterButtons() {
     }
 }
 
+productsContainer.addEventListener("click", function(event){
+    if (event.target.classList.contains('add-to-cart-btn')) {
+        let productCart = event.target.closest(".product");
+        let productId = parseInt(productCart.dataset.id)
+        addToCart(productId)
+    }
+})
 renderProducts(products)
 setupFilterButtons()

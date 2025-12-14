@@ -9,15 +9,61 @@ let products = [
     },
     {
         id: 2,
-        name: 'нокя3310',
-        image: 'img',
+        name: 'Ноутбук Apple Macbook Pro A1990',
+        image: 'img/laptop-apple-macbook-pro-a1990.webp',
         desription: 'Опис',
         type: 'laptop',
-        price: 150
-    }
+        price: 22899
+    },
+    {
+        id: 3,
+        name: 'Ноутбук Apple Macbook Pro A1990',
+        image: 'img/laptop-apple-macbook-pro-a1990.webp',
+        desription: 'Опис',
+        type: 'laptop',
+        price: 22899
+    },
+    {
+        id: 4,
+        name: 'Ноутбук Apple Macbook Pro A1990',
+        image: 'img/laptop-apple-macbook-pro-a1990.webp',
+        desription: 'Опис',
+        type: 'laptop',
+        price: 22899
+    },
+    {
+        id: 5,
+        name: 'Ноутбук Apple Macbook Pro A1990',
+        image: 'img/laptop-apple-macbook-pro-a1990.webp',
+        desription: 'Опис',
+        type: 'laptop',
+        price: 22899
+    },
+    {
+        id: 6,
+        name: 'Ноутбук Apple Macbook Pro A1990',
+        image: 'img/laptop-apple-macbook-pro-a1990.webp',
+        desription: 'Опис',
+        type: 'laptop',
+        price: 22899
+    },
+    {
+        id: 7,
+        name: 'Ноутбук Apple Macbook Pro A1990',
+        image: 'img/laptop-apple-macbook-pro-a1990.webp',
+        desription: 'Опис',
+        type: 'laptop',
+        price: 22899
+    },
+    {
+        id: 8,
+        name: 'Ноутбук Apple Macbook Pro A1990',
+        image: 'img/laptop-apple-macbook-pro-a1990.webp',
+        desription: 'Опис',
+        type: 'laptop',
+        price: 22899
+    },
 ];
-
-let cart = [];
 
 let productsContainer = document.querySelector(".products-div")
 let btnGroup = document.querySelector(".btn-group")
@@ -25,7 +71,7 @@ let btnGroup = document.querySelector(".btn-group")
 function renderProducts(items) {
     productsContainer.innerHTML = ""
     if (items.length == 0) {
-        productsContainer.innerHTML = '<p>Товарів нєма</p>'
+        productsContainer.innerHTML = '<p>Товарів немає</p>'
         return;
     }
     items.forEach(function (item) {
@@ -53,12 +99,15 @@ function applyFilters(categoryType){
 }
 
 function addToCart(productId) {
-    let product = products.find(p => p.id == productId);
-    if (product) {
-        cart.push(product);
-        alert("Товар додано" + product.name)
-        //cookies or localStorage
-    }
+    let cartProduct = cart.find(p => p.id == productId);
+    if (cartProduct) {
+        cartProduct.quantity += 1;
+    } else {
+        let product = products.find(p => p.id == productId);
+        cart.push({...product, quantity: 1});
+    }        
+    localStorage.setItem("cart", JSON.stringify(cart));
+    alert("Товар додано:" + product.name)
 }
 
 let productsMap = {
@@ -85,3 +134,4 @@ productsContainer.addEventListener("click", function(event){
 })
 renderProducts(products)
 setupFilterButtons()
+

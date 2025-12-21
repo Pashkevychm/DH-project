@@ -65,6 +65,7 @@ cartContainer.addEventListener('click', (event) => {
         cart = cart.filter(item => item.id !== id);
         localStorage.setItem('cart', JSON.stringify(cart));
         renderCart();
+        updateCartCount();
     }
 })
 

@@ -1,11 +1,11 @@
 let products = [
     {
         id: 1,
-        name: "Iphone",
-        image: "img",
+        name: "Iphone 15 Pro Max",
+        image: "img/iphone-15-pro-max.jpg",
         desription: "Опис",
         type: "phone",
-        price: 1000
+        price: 40899
     },
     {
         id: 2,
@@ -65,6 +65,8 @@ let products = [
     },
 ];
 
+let cart = JSON.parse(localStorage.getItem('cart')) || [];
+
 let productsContainer = document.querySelector(".products-div")
 let btnGroup = document.querySelector(".btn-group")
 
@@ -107,7 +109,14 @@ function addToCart(productId) {
         cart.push({...product, quantity: 1});
     }        
     localStorage.setItem("cart", JSON.stringify(cart));
+    updateCartCount();
     alert("Товар додано:" + product.name)
+}
+
+function updateCartCount() {
+    let cartCount = document.getElementById('cart-count');
+    let totalQuantity = cart.reduce((sum, item) => sum + item.quantity, 0);
+    cartCount.textContent = ' ' + totalQuantity;
 }
 
 let productsMap = {
@@ -134,4 +143,4 @@ productsContainer.addEventListener("click", function(event){
 })
 renderProducts(products)
 setupFilterButtons()
-
+updateCartCount()

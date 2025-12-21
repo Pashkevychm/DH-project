@@ -35,6 +35,15 @@ function renderCart() {
         cartContainer.innerHTML += html;
     });
     totalElement.innerText = `${calculateTotal()} грн`;
+    updateCartCount();
+}
+
+function updateCartCount() {
+    let cartCount = document.getElementById('cart-count');
+    if (cartCount) {
+        let totalQuantity = cart.reduce((sum, item) => sum + item.quantity, 0);
+        cartCount.textContent = ' ' + totalQuantity;
+    }
 }
 
 function calculateTotal() {
@@ -46,6 +55,7 @@ function calculateTotal() {
 }
 
 renderCart();
+updateCartCount();
 
 cartContainer.addEventListener('click', (event) => {
     if (event.target.classList.contains('remove-btn')) {

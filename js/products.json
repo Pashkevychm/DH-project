@@ -1,0 +1,66 @@
+[
+    {
+        "id": 1,
+        "name": "Iphone",
+        "image": "img/iphone-15-pro-max.jpg",
+        "desription": "Опис",
+        "type": "phone",
+        "price": 40899
+    },
+    {
+        "id": 2,
+        "name": "Ноутбук Apple Macbook Pro A1990",
+        "image": "img/laptop-apple-macbook-pro-a1990.webp",
+        "desription": "Опис",
+        "type": "laptop",
+        "price": 22899
+    },
+    {
+        "id": 3,
+        "name": "Ноутбук Apple Macbook Pro A1990",
+        "image": "img/laptop-apple-macbook-pro-a1990.webp",
+        "desription": "Опис",
+        "type": "laptop",
+        "price": 22899
+    },
+    {
+        "id": 4,
+        "name": "Ноутбук Apple Macbook Pro A1990",
+        "image": "img/laptop-apple-macbook-pro-a1990.webp",
+        "desription": "Опис",
+        "type": "laptop",
+        "price": 22899
+    },
+    {
+        "id": 5,
+        "name": "Ноутбук Apple Macbook Pro A1990",
+        "image": "img/laptop-apple-macbook-pro-a1990.webp",
+        "desription": "Опис",
+        "type": "laptop",
+        "price": 22899
+    },
+    {
+        "id": 6,
+        "name": "Ноутбук Apple Macbook Pro A1990",
+        "image": "img/laptop-apple-macbook-pro-a1990.webp",
+        "desription": "Опис",
+        "type": "laptop",
+        "price": 22899
+    },
+    {
+        "id": 7,
+        "name": "Ноутбук Apple Macbook Pro A1990",
+        "image": "img/laptop-apple-macbook-pro-a1990.webp",
+        "desription": "Опис",
+        "type": "laptop",
+        "price": 22899
+    },
+    {
+        "id": 8,
+        "name": "Ноутбук Apple Macbook Pro A1990",
+        "image": "img/laptop-apple-macbook-pro-a1990.webp",
+        "desription": "Опис",
+        "type": "laptop",
+        "price": 22899
+    }
+]

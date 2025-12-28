@@ -3,7 +3,7 @@ let products = [
         id: 1,
         name: "Iphone 15 Pro Max",
         image: "img/iphone-15-pro-max.jpg",
-        desription: "Хороши телефон для роботи та ігор",
+        desription: "Хороший телефон для роботи та ігор",
         type: "phone",
         price: 40899
     },
@@ -19,7 +19,7 @@ let products = [
         id: 3,
         name: 'Мишка Logitech G Pro X Superlight 2 Lightspeed',
         image: 'img/logitech-g-pro-x-superlight.png',
-        desription: 'Комфортна і легка ігрова мишка з високою точністю',
+        desription: 'Комфортна й легка ігрова мишка з високою точністю',
         type: 'accessories',
         price: 4999
     },

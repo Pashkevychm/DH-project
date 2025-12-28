@@ -3,7 +3,7 @@ let products = [
         id: 1,
         name: "Iphone 15 Pro Max",
         image: "img/iphone-15-pro-max.jpg",
-        desription: "Опис",
+        desription: "Хороши телефон для роботи та ігор",
         type: "phone",
         price: 40899
     },
@@ -11,57 +11,41 @@ let products = [
         id: 2,
         name: 'Ноутбук Apple Macbook Pro A1990',
         image: 'img/laptop-apple-macbook-pro-a1990.webp',
-        desription: 'Опис',
+        desription: 'Продуктивний ноутбук для професіоналів та творчих людей',
         type: 'laptop',
         price: 22899
     },
     {
         id: 3,
-        name: 'Ноутбук Apple Macbook Pro A1990',
-        image: 'img/laptop-apple-macbook-pro-a1990.webp',
-        desription: 'Опис',
-        type: 'laptop',
-        price: 22899
+        name: 'Мишка Logitech G Pro X Superlight 2 Lightspeed',
+        image: 'img/logitech-g-pro-x-superlight.png',
+        desription: 'Комфортна і легка ігрова мишка з високою точністю',
+        type: 'accessories',
+        price: 4999
     },
     {
         id: 4,
-        name: 'Ноутбук Apple Macbook Pro A1990',
-        image: 'img/laptop-apple-macbook-pro-a1990.webp',
-        desription: 'Опис',
-        type: 'laptop',
-        price: 22899
+        name: 'Навушники Logitech G PRO X Gaming Headset Black',
+        image: 'img/Logitech-G-PRO-X-Gaming-Headset-Black.png',
+        desription: 'Розкішні ігрові навушники з кришталево чистим звуком',
+        type: 'accessories',
+        price: 4445
     },
     {
         id: 5,
-        name: 'Ноутбук Apple Macbook Pro A1990',
-        image: 'img/laptop-apple-macbook-pro-a1990.webp',
-        desription: 'Опис',
-        type: 'laptop',
-        price: 22899
+        name: 'Клавіатура HATOR Gravity X TKL White',
+        image: 'img/HATOR Gravity X TKL White.png',
+        desription: 'Механічна ігрова клавіатура з RGB підсвіткою',
+        type: 'accessories',
+        price: 2099
     },
     {
         id: 6,
-        name: 'Ноутбук Apple Macbook Pro A1990',
-        image: 'img/laptop-apple-macbook-pro-a1990.webp',
-        desription: 'Опис',
-        type: 'laptop',
-        price: 22899
-    },
-    {
-        id: 7,
-        name: 'Ноутбук Apple Macbook Pro A1990',
-        image: 'img/laptop-apple-macbook-pro-a1990.webp',
-        desription: 'Опис',
-        type: 'laptop',
-        price: 22899
-    },
-    {
-        id: 8,
-        name: 'Ноутбук Apple Macbook Pro A1990',
-        image: 'img/laptop-apple-macbook-pro-a1990.webp',
-        desription: 'Опис',
-        type: 'laptop',
-        price: 22899
+        name: 'Смартфон Samsung Galaxy S25 FE',
+        image: 'img/Samsung Galaxy S25 FE.png',
+        desription: 'Потужний смартфон з відмінною камерою та дисплеєм',
+        type: 'phone',
+        price: 29699
     },
 ];
 
@@ -122,7 +106,8 @@ function updateCartCount() {
 let productsMap = {
     "Всі": "all",
     "Телефони": "phone",
-    "Комп'ютери": "laptop"
+    "Комп'ютери": "laptop",
+    "Аксесуари": "accessories"
 }
 
 function setupFilterButtons() {
